@@ -389,12 +389,14 @@
 .section.about .profile img {
 	width: 100%;
 	display: block;
+	margin-top: 40px;
 }
 
 @media (max-width: 1079px) {
 	.section.about h1 {
 		font-size: 40px;
 		line-height: 50px;
+		margin-top: 20px;
 	}
 
 	.section.about br {
