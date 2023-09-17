@@ -1,0 +1,452 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+.testimonial-section {
+  position: relative;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial-section:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.section__wrapper {
+  background-color: #b8d5db;
+}
+
+.section--wrapped {
+  padding: 0;
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-slider:focus {
+  outline: none;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  outline: none;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -45px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 30px;
+  line-height: 20px;
+  text-align: center;
+  color: #000;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #000;
+  opacity: 0.75;
+}
+
+.control__wrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (min-width: 960px) {
+  .control__wrapper {
+    display: block;
+  }
+}
+
+.control {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  cursor: pointer;
+}
+
+.control--back path {
+  fill: rgba(0, 0, 0, 0.4);
+}
+
+.control__img {
+  width: 48px;
+  height: 48px;
+}
+
+.control__img__content {
+  opacity: 0.3;
+}
+
+.media {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: auto;
+}
+
+.media:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.testimonial__control--prev {
+  left: -16%;
+}
+
+@media screen and (min-width: 230px) {
+  .testimonial__control--prev {
+    left: -12%;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .testimonial__control--prev {
+    left: -8%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .testimonial__control--prev {
+    left: 0%;
+  }
+}
+
+.testimonial__control--next {
+  right: -23%;
+}
+
+@media screen and (min-width: 230px) {
+  .testimonial__control--next {
+    right: -14%;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .testimonial__control--next {
+    right: -8%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .testimonial__control--next {
+    right: 0%;
+  }
+}
+
+.testimonial__slider {
+  margin: 4em auto;
+  width: 100%;
+  max-width: 26.37em;
+}
+
+@media screen and (min-width: 960px) {
+  .testimonial__slider {
+    width: 37.5em;
+    max-width: 37.5em;
+  }
+}
+
+.testimonial__item {
+  width: 100%;
+  max-width: 26.37em;
+}
+
+.testimonial__item:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+@media screen and (min-width: 960px) {
+  .testimonial__item {
+    width: 37.5em;
+    max-width: 38.5em;
+  }
+
+  .shrink {
+    width: 30%;
+  }
+}
+
+.testimonial__item--hidden {
+  display: none;
+}
+
+.testimonial__item--active {
+  display: block;
+}
+
+.testimonial__item:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 640px) {
+  .testimonial__person {
+    margin-top: 2.81em;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .testimonial__person {
+    float: left;
+  }
+}
+
+.testimonial__detail {
+  text-align: center;
+}
+
+.testimonial__name,
+.testimonial__position {
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.testimonial__position {
+  text-transform: none;
+  color: #999;
+}
+
+.testimonial__quote {
+  position: relative;
+  max-width: 25em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial__quote:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+@media screen and (min-width: 640px) {
+  .testimonial__quote {
+    float: right;
+  }
+}
+
+.testimonial__quote__mark {
+  position: absolute;
+  z-index: -1;
+  left: 0.375em;
+  top: -1.0625em;
+  width: 3.625em;
+  height: 3.625em;
+}
+
+@media screen and (min-width: 640px) {
+  .testimonial__quote__mark {
+    top: 0.625em;
+    left: -0.5625em;
+  }
+}
+
+.quote__img {
+  width: inherit;
+}
+
+.quote__img__content {
+  fill: #f1e2d6;
+}
+
+.quote__msg {
+  margin: 1.875em 1.875em;
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+@media screen and (min-width: 640px) {
+  .quote__msg {
+    line-height: 1.8;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.face {
+  margin-bottom: 1em;
+  border-radius: 50%;
+}
+
+.face--small {
+  height: 6.25em;
+}
+
+.flexbox .specialty > .face {
+  display: block;
+  margin: 4em auto;
+}
+
+.smaller {
+  font-size: 0.9em;
+}
+
+.subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #738685;
+}
+
+.tiny {
+  font-size: 0.8em;
+}
