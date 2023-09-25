@@ -418,6 +418,11 @@
 }
 
 /* 5. Services */
+
+.section.services {
+  text-align: left;
+}
+
 .section.services .service-item {
 	margin-top: 25px;
 }
@@ -446,6 +451,16 @@
 	margin: 0;
 	font-size: 13px;
 	line-height: 22px;
+}
+
+@media (max-width: 720px) {
+  .section.services {
+    text-align: center;
+  }
+
+  .section.services .service-item p {
+    text-align: justify;
+  }
 }
 
 /* 6. Portfolio */
