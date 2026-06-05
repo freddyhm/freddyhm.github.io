@@ -262,8 +262,9 @@ html.anim-done .rise{opacity:1!important;transform:none!important}
   .cta-row{flex-direction:column;align-items:stretch}
   .btn{width:100%;justify-content:center;padding:16px 22px}
   .card{padding:18px}
-  .big-metric .n{font-size:32px}
-  .card-stats{gap:10px}
+  /* simplify hero card on phones: show only the stat row */
+  .card-top,.big-metric,.chartwrap{display:none}
+  .card-stats{gap:10px;padding-top:0;border-top:0}
   .stat .n{font-size:17px}
   .work-cols{grid-template-columns:1fr;gap:24px}
   .case-grid{grid-template-columns:1fr;gap:16px}
