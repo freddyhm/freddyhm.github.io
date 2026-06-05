@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>How I Manage My Projects: A Step-By-Step Guide — Freddy Hidalgo-Monchez</title>
+<link rel="icon" href="https://freddyhm.com/images/favicons/favicon.ico" sizes="any" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/blog.css" />
+</head>
+<body>
+<div class="blueprint" id="bp" aria-hidden="true"></div>
+
+<nav>
+  <a class="logo" href="../index.html">Freddy Hidalgo-Monchez</a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="nav-menu">
+    <a href="../index.html#about">Work</a>
+    <a href="../index.html#testimonials">People</a>
+    <a href="../blog.html">Blog</a>
+    <a href="../index.html#contact">Contact</a>
+  </div>
+</nav>
+
+<main>
+  <a class="back-link" href="../blog.html">← All posts</a>
+
+  <article class="post--full">
+    <header class="post-header">
+      <div class="post-meta"><span>September 16 2023</span><span>Guide</span><span>Productivity</span></div>
+      <h1 class="post-title">How I manage my projects: a step-by-step guide</h1>
+    </header>
+
+    <div class="post-body">
+      <p>There are so many tutorials on how to build stuff, but much less on how to actually manage what you're building — whether that's a quick weekend day hack or a month long project.</p>
+      <p>That's a shame because I find that having a solid project management system in place can be a real game-changer.</p>
+      <p>It kickstarts your ideas, keeps you aligned with your goals, and lets you stay laser-focused during development.</p>
+      <p>So, here's what's been working for me over the past five years.</p>
+
+      <h2>Step 1: Requirements</h2>
+      <p>I kick things off with a simple spec sheet:</p>
+      <ul>
+        <li><b>What's the goal:</b> What's the project's main goal or purpose?</li>
+        <li><b>Why build this:</b> Why is it important to undertake this project? Understanding the underlying motivation helps shape the project's scope</li>
+        <li><b>Requirements:</b> what are the critical features to consider the first version complete?</li>
+        <li><b>Phases:</b> what is the essential work for each iteration? I try to keep the first as ridiculously small as possible to build momentum quickly</li>
+        <li><b>Mockup:</b> what does this look like? The goal is to get an idea of what the project should look like. On bigger projects it can also help guide the backend work (e.g. what type of data do we need, format, etc.)</li>
+      </ul>
+
+      <h2>Step 2: Architectural Documents</h2>
+      <p>Once I know what needs to be built, I'll outline what kind of architecture can satisfy those requirements as efficiently as possible.</p>
+      <p>This is where I'll look at non-functional requirements and carefully think about the scope.</p>
+      <p>What is critical? What can wait? What's the bare minimum?</p>
+      <p>I do this early on because it'll determine the pieces I need to build the project before I write a single line of code.</p>
+      <p>Essentially, it lets me code with an uncluttered mind knowing that the big questions are partly answered.</p>
+      <p>After narrowing down how the system should behave, I'll think about the technology that I can use.</p>
+      <p>That's where Architectural Decision Records come in. These are documents that clarify the reasoning behind decisions made.</p>
+      <p>This step might feel like it'll just slow down the process for little gain, but I found the outcome to actually be the opposite.</p>
+      <p>Without this crucial planning step, I find projects tend to easily derail and can stretch from weeks to months. It's even worse on solo work where you have little accountability.</p>
+      <p>The power of these docs to clarify thought and keep focus is huge!</p>
+
+      <h2>Step 3: Feature breakdown &amp; Estimates</h2>
+      <p>Almost all projects I've seen break down their features into tasks — this is nothing new. The part I find extremely useful is estimating time and risk.</p>
+      <p>For each task, I'll write down how long I think it'll take and how risky the task is.</p>
+      <p>I define risk here as how probable it is that the task goes over the time I estimated.</p>
+      <p>I add up the hours and that's my best estimate. I'll multiply it (usually by a factor of 2) and I have my worst estimate.</p>
+      <p>This serves a few purposes: it helps create an estimate that is bounded (best, worst), and helps prioritize what to work on.</p>
+
+      <h2>Step 4: Scheduling</h2>
+      <p>Equipped with an estimate in hours and days, the next step is to simply add it to a schedule.</p>
+      <p>I find this is important because it makes the deadline real in my head. It also keeps me regularly checking mentally if a task fits within the given timeframe.</p>
+      <p>I keep this page open throughout my development.</p>
+      <p>Now we know what we're building, how we're building it initially, and how long it's going to take.</p>
+      <p>Next, we need to visualize the work.</p>
+
+      <h2>Step 5: Visualizing work</h2>
+      <p>I like using a Kanban style board (Trello has been my go to for its simplicity) that has the following:</p>
+      <ul>
+        <li><b>Backlog:</b> tasks that pop into my head while working</li>
+        <li><b>To Do:</b> tasks I outlined in Step 3 or pull from the backlog based on priority</li>
+        <li><b>Doing:</b> what I'm currently working on</li>
+        <li><b>Done:</b> what's done (useful for review at the end of project)</li>
+      </ul>
+      <p>Here's my productivity secret sauce, on every task title I add the following:</p>
+      <ul>
+        <li><b>Est.:</b> the estimated time for the task</li>
+        <li><b>RT:</b> the real time it took to complete</li>
+        <li><b>Tag 'Ahead' or 'Behind':</b> is the real time below or above the estimated time?</li>
+      </ul>
+
+      <h2>Step 6: Tracking the work</h2>
+      <p>Right before I start working, I start my timer and place it in a separate screen so it's always in the corner of my eye.</p>
+      <p>Seeing the time pass helps my mind remember that time is a precious resource, even if it may feel like there's plenty of it.</p>
+      <p>Once the task is done, and this part is super important as well, I'll update the task's 'RT' on the board and set its tag to 'Ahead' or 'Behind'.</p>
+      <p>Updating tasks as I complete them gives me instant feedback on how much time is left for the project.</p>
+      <p>That type of awareness ultimately guides future tasks: can I afford to go deeper in this area? should I leave this task for the next phase? etc.</p>
+      <p class="problem"><span class="k">Note</span>All of the previous steps wouldn't amount to much if it wasn't for this step. Tracking how long each task takes might seem like a lot of context switching, but the cost is minimal compared to the gain in awareness!</p>
+
+      <h2>Step 7: Retrospective</h2>
+      <p>Once the feature is complete, I'll update the schedule with the real time it took for the project to be completed.</p>
+      <p>In keeping with the spirit of agile, this is where a mini retrospective takes place: what went well, what could be improved for the next feature, what were the biggest time sinks, etc.</p>
+
+      <h2>Were all those steps really necessary?</h2>
+      <p>Well no, nothing is really necessary.</p>
+      <p>But that question should be rephrased to:</p>
+      <p class="pull">Is finishing the project as efficiently as possible really necessary?</p>
+      <p>If the answer is yes, then these steps go a long way ensuring projects finish on time.</p>
+      <p>And I don't know about you, but I really ❤️ finishing projects on time 😜</p>
+    </div>
+
+    <div class="post-cta">
+      <div class="k">Enjoyed this?</div>
+      <a class="btn btn-primary" href="mailto:freddy.hidalgo.m@gmail.com">Get in touch <span class="arr">→</span></a>
+    </div>
+  </article>
+</main>
+
+<footer>
+  <span>© 2026 Freddy Hidalgo-Monchez</span>
+  <a href="../blog.html">All posts</a>
+</footer>
+
+<script src="../js/blog.js"></script>
+</body>
+</html>

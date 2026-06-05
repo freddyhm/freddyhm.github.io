@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Blog — Freddy Hidalgo-Monchez</title>
+<link rel="icon" href="https://freddyhm.com/images/favicons/favicon.ico" sizes="any" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/blog.css" />
+</head>
+<body>
+<div class="blueprint" id="bp" aria-hidden="true"></div>
+
+<nav>
+  <a class="logo" href="index.html">Freddy Hidalgo-Monchez</a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="nav-menu">
+    <a href="index.html#about">Work</a>
+    <a href="index.html#testimonials">People</a>
+    <a href="blog.html" aria-current="page">Blog</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</nav>
+
+<main>
+  <header class="blog-head">
+    <div class="blog-eyebrow">Writing</div>
+    <h1>A few thoughts</h1>
+    <p>Notes on software, teams, and building things that matter.</p>
+  </header>
+
+  <!-- ============================================================
+       Each row links to a standalone post page. To add a new post:
+       1. Copy an existing post page (e.g. engineering-scope.html).
+       2. Add a new <a class="post-row"> here pointing at it.
+       Newest first.
+       ============================================================ -->
+  <div class="post-list">
+    <a class="post-row" href="blog/managing-projects.html">
+      <span class="post-date">Sept 16 2023</span>
+      <span>
+        <span class="post-row-title">How I manage my projects: a step-by-step guide</span>
+        <span class="post-row-cat">Guide · Productivity</span>
+      </span>
+    </a>
+    <a class="post-row" href="blog/team-productivity.html">
+      <span class="post-date">Aug 18 2023</span>
+      <span>
+        <span class="post-row-title">How I increased my team's productivity by 40%</span>
+        <span class="post-row-cat">Essay · Teams</span>
+      </span>
+    </a>
+    <a class="post-row" href="blog/engineering-scope.html">
+      <span class="post-date">June 14 2023</span>
+      <span>
+        <span class="post-row-title">Which engineering scope are you using?</span>
+        <span class="post-row-cat">Essay · Engineering</span>
+      </span>
+    </a>
+  </div>
+</main>
+
+<footer>
+  <span>© 2026 Freddy Hidalgo-Monchez</span>
+  <a href="index.html">Home</a>
+</footer>
+
+<script src="js/blog.js"></script>
+</body>
+</html>
