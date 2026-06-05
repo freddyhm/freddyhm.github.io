@@ -306,3 +306,46 @@ html.anim-done .rise{opacity:1!important;transform:none!important}
   .post-link:hover{padding-left:0}
   .post-link .p-title{font-size:17px}
 }
+
+/* ---- SWIPEABLE CAROUSELS (phone only) ----
+   Work / Testimonials / Writing tracks become horizontal scroll-snap
+   carousels showing one content block per view. Inert on desktop. */
+.carousel-dots{display:none}
+@media(max-width:600px){
+  .carousel{
+    display:flex;
+    flex-flow:row nowrap;
+    gap:16px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    overscroll-behavior-x:contain;
+    scrollbar-width:none;
+  }
+  .carousel::-webkit-scrollbar{display:none}
+  .carousel>*{
+    flex:0 0 100%;
+    min-width:0;
+    scroll-snap-align:start;
+    scroll-snap-stop:always;
+  }
+  /* testimonial + writing slides lose their stacked dividers — give each a card frame */
+  .testi .carousel>.t-row,
+  .writing .carousel>.post-link{
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:24px;
+  }
+
+  /* pagination dots */
+  .carousel-dots{display:flex;justify-content:center;gap:9px;margin-top:20px}
+  .carousel-dots button{
+    width:7px;height:7px;padding:0;border:0;border-radius:50%;
+    background:var(--line);cursor:pointer;-webkit-tap-highlight-color:transparent;
+    transition:background .25s ease,transform .25s ease}
+  .carousel-dots button[aria-current="true"]{background:var(--accent-deep);transform:scale(1.35)}
+}
+@media(max-width:600px) and (prefers-reduced-motion:reduce){
+  .carousel-dots button{transition:none}
+}
