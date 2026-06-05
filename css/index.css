@@ -261,11 +261,8 @@ html.anim-done .rise{opacity:1!important;transform:none!important}
   .hero-sub{font-size:16px;margin:12px 0 22px}
   .cta-row{flex-direction:column;align-items:stretch}
   .btn{width:100%;justify-content:center;padding:16px 22px}
-  .card{padding:18px}
-  /* simplify hero card on phones: show only the stat row */
-  .card-top,.big-metric,.chartwrap{display:none}
-  .card-stats{gap:10px;padding-top:0;border-top:0}
-  .stat .n{font-size:17px}
+  /* hero track-record card is hidden on phones */
+  .card{display:none}
   .work-cols{grid-template-columns:1fr;gap:24px}
   .case-grid{grid-template-columns:1fr;gap:16px}
   .case-card{padding:20px}
