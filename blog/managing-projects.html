@@ -36,42 +36,47 @@
     </header>
 
     <div class="post-body">
-      <p>There are so many tutorials on how to build stuff, but much less on how to actually manage what you're building — whether that's a quick weekend day hack or a month long project.</p>
-      <p>That's a shame because I find that having a solid project management system in place can be a real game-changer.</p>
-      <p>It kickstarts your ideas, keeps you aligned with your goals, and lets you stay laser-focused during development.</p>
+      <p>There are so many tutorials on how to build stuff, but much less on how to actually manage what you're building.</p>
+      <p>I find a lightweight project tracker super helpful for kickstarting my ideas, keeping me aligned with my goals, and keeping me laser-focused during development.</p>
       <p>So, here's what's been working for me over the past five years.</p>
 
-      <h2>Step 1: Requirements</h2>
-      <p>I kick things off with a simple spec sheet:</p>
+      <h2>Step 1: Product Requirements</h2>
+      <p>I kick things off with a simple spec sheet with the following:</p>
       <ul>
-        <li><b>What's the goal:</b> What's the project's main goal or purpose?</li>
-        <li><b>Why build this:</b> Why is it important to undertake this project? Understanding the underlying motivation helps shape the project's scope</li>
+        <li><b>Goal:</b> What's the project's main goal or purpose? Why is it important to undertake this project? Understanding the underlying motivation helps me shape the project's scope</li>
         <li><b>Requirements:</b> what are the critical features to consider the first version complete?</li>
         <li><b>Phases:</b> what is the essential work for each iteration? I try to keep the first as ridiculously small as possible to build momentum quickly</li>
         <li><b>Mockup:</b> what does this look like? The goal is to get an idea of what the project should look like. On bigger projects it can also help guide the backend work (e.g. what type of data do we need, format, etc.)</li>
       </ul>
 
       <h2>Step 2: Architectural Documents</h2>
-      <p>Once I know what needs to be built, I'll outline what kind of architecture can satisfy those requirements as efficiently as possible.</p>
-      <p>This is where I'll look at non-functional requirements and carefully think about the scope.</p>
-      <p>What is critical? What can wait? What's the bare minimum?</p>
-      <p>I do this early on because it'll determine the pieces I need to build the project before I write a single line of code.</p>
-      <p>Essentially, it lets me code with an uncluttered mind knowing that the big questions are partly answered.</p>
-      <p>After narrowing down how the system should behave, I'll think about the technology that I can use.</p>
-      <p>That's where Architectural Decision Records come in. These are documents that clarify the reasoning behind decisions made.</p>
-      <p>This step might feel like it'll just slow down the process for little gain, but I found the outcome to actually be the opposite.</p>
-      <p>Without this crucial planning step, I find projects tend to easily derail and can stretch from weeks to months. It's even worse on solo work where you have little accountability.</p>
-      <p>The power of these docs to clarify thought and keep focus is huge!</p>
+      <p>Once I know what needs to be built, I'll quickly outline what kind of architecture and technologies I'll use to satisfy those product requirements. Part of that is also looking at non-functional requirements such as usability, availability, security, etc. and answering the following:</p>
+      <p>What is critical? What can wait? What's the bare minimum? What parts can I re-use from another system or app?</p>
+      <p>I know most engineers are allergic to anything with the word "document", but I've seen time and time again, that just taking a few minutes to describe why I was using x kept me from choosing the wrong tools for the job.</p>
+      <p>It also does two things:</p>
+      <ul>
+        <li>It helps me surface the pieces I need to bake into the project right away</li>
+        <li>It communicates with my team and/or my future self why these decisions were made so I can learn from my wrong assumptions</li>
+      </ul>
+      <p class="problem"><span class="k">By the way</span>Not all projects need a fully in-depth analysis. A throwaway weekend project? I'll just write N/A everywhere and call it a day. The important part is taking the time to just ask the questions.</p>
 
       <h2>Step 3: Feature breakdown &amp; Estimates</h2>
-      <p>Almost all projects I've seen break down their features into tasks — this is nothing new. The part I find extremely useful is estimating time and risk.</p>
-      <p>For each task, I'll write down how long I think it'll take and how risky the task is.</p>
-      <p>I define risk here as how probable it is that the task goes over the time I estimated.</p>
-      <p>I add up the hours and that's my best estimate. I'll multiply it (usually by a factor of 2) and I have my worst estimate.</p>
-      <p>This serves a few purposes: it helps create an estimate that is bounded (best, worst), and helps prioritize what to work on.</p>
+      <p>Ah, the art of breaking down a feature! I don't believe there's a magic bullet here. I've worked on projects with nothing broken down to ones with a gazillion tasks for the simplest thing. Both have yielded successes and failures, all have resulted in more than a few pissed off engineers.</p>
+      <p>Here are a few simple principles I have seen work more often than not:</p>
+      <ul>
+        <li><b>Think through each high level step that might be required:</b> fights the brain's tendency to underestimate effort required</li>
+        <li><b>Tackle the riskiest parts first</b> (e.g. integrating components, core logic, weak assumptions, etc.): failing early is a great thing</li>
+        <li><b>Iterate relentlessly</b> by removing/editing/consolidating tasks based on progress: the process should adapt to the work, not the other way around</li>
+      </ul>
+      <p>This is what I do:</p>
+      <p>For each task, I'll write down how long I think it'll take and how risky the task is (I'm a fan of using small/medium/large to guestimate). I'll add everything up and multiply that by a factor of 2 or 3 and that'll be my worst estimate. I like presenting a best case and worst case for each project. I find that creates more grounded expectations than giving one date.</p>
+      <p>Having worked with agile points before, I reluctantly think the overhead is not worth the benefit, at least in my experience.</p>
+      <p>I say reluctantly because there are parts I really liked. For example, estimating as a group surfaced a lot of false assumptions and pitfalls. But I'd be lying if I said it was easy to wrap my head around how the work mapped to points (Fibonacci??), and communicating that to stakeholders was even worse ("We can get 25 points done in one sprint! But I'm not sure how long that'll take...").</p>
+      <p class="pull">Estimating software delivery is extremely hard, and lots of people waayyyy smarter than me have concluded it wasn't really possible at scale.</p>
+      <p>I've delivered my fair share of late projects. I've also gotten much better at estimating my work by following the principles I outlined.</p>
 
       <h2>Step 4: Scheduling</h2>
-      <p>Equipped with an estimate in hours and days, the next step is to simply add it to a schedule.</p>
+      <p>Equipped with an estimate in hours and days, my next step is to simply add it to a schedule.</p>
       <p>I find this is important because it makes the deadline real in my head. It also keeps me regularly checking mentally if a task fits within the given timeframe.</p>
       <p>I keep this page open throughout my development.</p>
       <p>Now we know what we're building, how we're building it initially, and how long it's going to take.</p>
@@ -83,33 +88,29 @@
         <li><b>Backlog:</b> tasks that pop into my head while working</li>
         <li><b>To Do:</b> tasks I outlined in Step 3 or pull from the backlog based on priority</li>
         <li><b>Doing:</b> what I'm currently working on</li>
-        <li><b>Done:</b> what's done (useful for review at the end of project)</li>
+        <li><b>Done:</b> what's done (useful for review at the end of project or communicating with stakeholders)</li>
       </ul>
-      <p>Here's my productivity secret sauce, on every task title I add the following:</p>
+      <p>Here's my productivity secret sauce, on every task I note the following:</p>
       <ul>
-        <li><b>Est.:</b> the estimated time for the task</li>
-        <li><b>RT:</b> the real time it took to complete</li>
-        <li><b>Tag 'Ahead' or 'Behind':</b> is the real time below or above the estimated time?</li>
+        <li>Estimated time for the task</li>
+        <li>Actual time it took for the task (fill in step 6)</li>
+        <li>Ahead or Behind schedule (fill in step 6)</li>
       </ul>
 
       <h2>Step 6: Tracking the work</h2>
       <p>Right before I start working, I start my timer and place it in a separate screen so it's always in the corner of my eye.</p>
       <p>Seeing the time pass helps my mind remember that time is a precious resource, even if it may feel like there's plenty of it.</p>
-      <p>Once the task is done, and this part is super important as well, I'll update the task's 'RT' on the board and set its tag to 'Ahead' or 'Behind'.</p>
+      <p>Once the task is done, and this part is super important as well, I'll update the task's actual time on the board and set its tag to 'Ahead' or 'Behind'.</p>
       <p>Updating tasks as I complete them gives me instant feedback on how much time is left for the project.</p>
+      <p>This is super useful because it shortens the feedback loop of knowing if the project is late or ahead of time.</p>
       <p>That type of awareness ultimately guides future tasks: can I afford to go deeper in this area? should I leave this task for the next phase? etc.</p>
-      <p class="problem"><span class="k">Note</span>All of the previous steps wouldn't amount to much if it wasn't for this step. Tracking how long each task takes might seem like a lot of context switching, but the cost is minimal compared to the gain in awareness!</p>
 
       <h2>Step 7: Retrospective</h2>
       <p>Once the feature is complete, I'll update the schedule with the real time it took for the project to be completed.</p>
       <p>In keeping with the spirit of agile, this is where a mini retrospective takes place: what went well, what could be improved for the next feature, what were the biggest time sinks, etc.</p>
 
       <h2>Were all those steps really necessary?</h2>
-      <p>Well no, nothing is really necessary.</p>
-      <p>But that question should be rephrased to:</p>
-      <p class="pull">Is finishing the project as efficiently as possible really necessary?</p>
-      <p>If the answer is yes, then these steps go a long way ensuring projects finish on time.</p>
-      <p>And I don't know about you, but I really ❤️ finishing projects on time 😜</p>
+      <p>Well no, nothing is really necessary. But I don't know about you, I would much rather take the time up front to plan a bit than work late nights praying the project will be done on time.</p>
     </div>
 
     <div class="post-cta">
