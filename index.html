@@ -15,19 +15,22 @@
 <nav>
   <div class="nav-inner">
     <a class="logo" href="#">Freddy Hidalgo-Monchez</a>
-    <div class="nav-links">
+    <div class="nav-links" id="nav-menu">
       <a href="#competences" data-i18n="navSkills">Compétences</a>
       <a href="#domaines" data-i18n="navAreas">Domaines</a>
       <a href="#mission" data-i18n="navMission">Mission</a>
       <a href="#contact" data-i18n="navContact">Contact</a>
       <a href="software.html" data-i18n="navSoftware">Logiciel</a>
       <a href="blog.html" data-i18n="navBlog">Blogue</a>
-      <div class="lang" role="group" aria-label="Language">
-        <button type="button" data-lang="fr" aria-pressed="true">FR</button>
-        <button type="button" data-lang="en" aria-pressed="false">EN</button>
-        <button type="button" data-lang="es" aria-pressed="false">ES</button>
-      </div>
     </div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 

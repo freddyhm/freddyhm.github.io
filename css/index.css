@@ -46,12 +46,36 @@ a:hover{color:var(--accent-hover)}
 
 /* nav */
 nav{position:sticky;top:0;z-index:5;background:var(--nav-bg);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav-inner{max-width:1200px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:16px 24px;flex-wrap:wrap}
+.nav-inner{max-width:1200px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:16px 28px;flex-wrap:wrap}
 .logo{font-weight:600;font-size:16px;letter-spacing:-0.01em}
-.nav-links{display:flex;align-items:center;gap:8px 28px;flex-wrap:wrap;font-size:15px}
+.nav-links{display:flex;align-items:center;gap:8px 28px;flex-wrap:wrap;font-size:15px;margin-left:auto}
 .lang{display:flex;gap:2px;font-family:var(--mono);font-size:12px;border:1px solid var(--pill-line);border-radius:999px;padding:3px}
 .lang button{font:inherit;cursor:pointer;border:0;border-radius:999px;padding:5px 10px;background:transparent;color:var(--body)}
 .lang button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+
+/* mobile nav toggle (hidden on desktop), same as the software page */
+.nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;
+  margin:-10px 0 -10px 14px;padding:0;background:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.nav-toggle span{display:block;width:22px;height:2px;border-radius:2px;background:var(--fg);margin:0 auto;transition:transform .25s ease,opacity .2s ease}
+nav.open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+nav.open .nav-toggle span:nth-child(2){opacity:0}
+nav.open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* tablet & below: hide the nav name, links collapse into a dropdown under the bar */
+@media(max-width:960px){
+  .nav-inner{column-gap:0}
+  .logo{display:none}
+  .nav-toggle{display:flex}
+  .lang{margin-left:auto}
+  .nav-links{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;
+    background:var(--bg);border-bottom:1px solid var(--line);padding:4px 32px 12px;
+    box-shadow:0 18px 40px oklch(0 0 0 / 0.12);
+    opacity:0;visibility:hidden;transform:translateY(-10px);
+    transition:opacity .22s ease,transform .22s ease,visibility .22s ease}
+  nav.open .nav-links{opacity:1;visibility:visible;transform:none}
+  .nav-links a{font-size:16px;padding:15px 2px;border-bottom:1px solid var(--line)}
+  .nav-links a:last-child{border-bottom:0}
+}
 
 /* hero */
 .hero-overlay,.hero-grid{position:absolute;inset:0;pointer-events:none}

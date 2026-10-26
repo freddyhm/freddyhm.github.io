@@ -71,3 +71,27 @@
   }
   try{var saved=localStorage.getItem('fhm-lang');if(saved&&COPY[saved]&&saved!=='fr')apply(saved);}catch(e){}
 })();
+
+/* Mobile nav toggle: same behaviour as js/mobile.js, with the button label in the page language. */
+(function(){
+  var nav=document.querySelector('nav'),btn=document.querySelector('.nav-toggle');
+  if(!nav||!btn)return;
+  var LABELS={fr:['Ouvrir le menu','Fermer le menu'],en:['Open menu','Close menu'],es:['Abrir el menú','Cerrar el menú']};
+  function label(){
+    var l=LABELS[document.documentElement.lang]||LABELS.fr;
+    btn.setAttribute('aria-label',l[nav.classList.contains('open')?1:0]);
+  }
+  function setOpen(open){
+    nav.classList.toggle('open',open);
+    btn.setAttribute('aria-expanded',open?'true':'false');
+    label();
+  }
+  btn.addEventListener('click',function(){setOpen(!nav.classList.contains('open'));});
+  nav.querySelectorAll('.nav-links a').forEach(function(a){
+    a.addEventListener('click',function(){setOpen(false);});
+  });
+  /* registered after the language switcher, so the label follows the newly applied language */
+  nav.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',label);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')setOpen(false);});
+  label();
+})();
