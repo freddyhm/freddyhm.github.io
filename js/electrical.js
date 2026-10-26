@@ -3,7 +3,7 @@
   var COPY={
     en:{
       title:"Freddy Hidalgo-Monchez — Engineer-in-training",
-      navAreas:"Areas",navSkills:"Skills",navSoftware:"Software",navContact:"Contact",
+      navAreas:"Areas",navSkills:"Skills",navMission:"Mission",navSoftware:"Software",navContact:"Contact",
       heroTitle:"Candidate to the engineering profession (CEP), electrical.",
       heroSub:"Passionate about reliability, distribution, and protection and control of power grids.",
       ctaContact:"Get in touch",
@@ -26,7 +26,7 @@
     },
     es:{
       title:"Freddy Hidalgo-Monchez — Candidato a la profesión de ingeniero",
-      navAreas:"Áreas",navSkills:"Competencias",navSoftware:"Software",navContact:"Contacto",
+      navAreas:"Áreas",navSkills:"Competencias",navMission:"Misión",navSoftware:"Software",navContact:"Contacto",
       heroTitle:"Candidato a la profesión de ingeniero (CPI) en electricidad.",
       heroSub:"Apasionado por la fiabilidad, la distribución, y la protección y control de las redes eléctricas.",
       ctaContact:"Contáctame",
