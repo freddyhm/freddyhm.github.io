@@ -109,6 +109,7 @@ main{max-width:720px;margin:0 auto;padding:0 44px}
 
 /* standout pull quote */
 .pull{border:none;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);padding:28px 0;font-size:clamp(20px,2.6vw,26px);font-weight:600;line-height:1.4;letter-spacing:-0.015em;color:var(--ink);text-wrap:balance}
+.pull-cite{display:block;margin-top:14px;font-family:var(--mono);font-size:12px;font-weight:400;letter-spacing:.04em;color:var(--ink-faint)}
 
 /* image placeholder — swap the box for <img src> or delete the <figure> */
 figure{margin:0}
